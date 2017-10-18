@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TableRow>
+            <ImageButton
+                android:id="@+id/butonlight"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:src="@drawable/desang"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/butonpolice"
+                android:layout_width="70dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/police"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:id="@+id/butonneon"
+                android:src="@drawable/neon"
+                android:layout_width="70dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:layout_height="70dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:id="@+id/butontracffic"
+                android:layout_height="70dp"
+                android:src="@drawable/tracfficlight"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_margin="5dp"
+                android:id="@+id/butonwaring"
+                android:src="@drawable/waring"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:id="@+id/butonflashlight"
+                android:layout_height="70dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_flatlight"
+                android:scaleType="fitCenter"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
