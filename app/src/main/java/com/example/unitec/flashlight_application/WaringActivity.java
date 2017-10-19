@@ -26,10 +26,10 @@ public class WaringActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
-                if(checkwaring==false){
-                    checkwaring = true;
-                } else {
-                    checkwaring = false;
+                if (checkwaring==false){
+                    checkwaring=true;
+                }else {
+                    checkwaring=false;
                 }
                 btnwaring.setChecked(checkwaring);
             }
@@ -38,7 +38,7 @@ public class WaringActivity extends AppCompatActivity {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-            handler.sendEmptyMessage(0);
+                handler.sendEmptyMessage(0);
             }
         },500,500);
     }

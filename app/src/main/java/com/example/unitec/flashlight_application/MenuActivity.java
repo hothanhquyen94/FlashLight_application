@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 /**
  * Created by Unitec on 18/10/2017.
@@ -13,7 +14,7 @@ import android.widget.ImageButton;
 
 public class MenuActivity extends Activity implements View.OnClickListener{
     ImageButton btnlight;
-    ImageButton btnNeon,btnwaring;
+    ImageButton btnNeon,btnwaring,btntraffic;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,9 +23,11 @@ public class MenuActivity extends Activity implements View.OnClickListener{
         btnlight = (ImageButton)findViewById(R.id.butonlight);
         btnNeon =  (ImageButton)findViewById(R.id.butonneon);
         btnwaring = (ImageButton)findViewById(R.id.butonwaring);
+        btntraffic = (ImageButton) findViewById(R.id.butontracffic);
         btnlight.setOnClickListener(this);
         btnNeon.setOnClickListener(this);
         btnwaring.setOnClickListener(this);
+        btntraffic.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +45,10 @@ public class MenuActivity extends Activity implements View.OnClickListener{
             case R.id.butonwaring:
                 Intent intentwaring = new Intent(MenuActivity.this,WaringActivity.class);
                 startActivity(intentwaring);
+                break;
+            case R.id.butontracffic:
+                Intent intentTraffic = new Intent(MenuActivity.this,LightTraffic.class);
+                startActivity(intentTraffic);
         }
     }
 }
